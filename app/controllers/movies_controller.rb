@@ -14,7 +14,7 @@ class MoviesController < ApplicationController
 
   # GET /movies/new
   def new
-    @movie = Movie.new
+    @movie = Movie.new(params[:movie])
   end
 
   # GET /movies/1/edit
